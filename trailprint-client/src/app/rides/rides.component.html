@@ -1,0 +1,8 @@
+<h2>My Rides</h2>
+<ul class="rides">
+	<li *ngFor="let ride of rides">
+		<a routerLink="/detail/{{ride.id}}">
+			<span class="badge">{{ride.id}}</span> {{ride.date}}
+		</a>
+	</li>
+</ul>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Ride } from '../ride'
 
 @Component({
   selector: 'app-root',

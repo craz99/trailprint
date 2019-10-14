@@ -1,0 +1,42 @@
+// Color variables (appears count calculates by raw css)
+@color0: #eeeeee; // Appears 2 times
+
+
+
+h2 {
+	color: red;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+}
+body {
+	color: crimson;
+	font-family: Cambria, Georgia;
+	margin: 2em;
+}
+input[text] {
+	color: crimson;
+	font-family: Cambria, Georgia;
+}
+button {
+	color: crimson;
+	font-family: Cambria, Georgia;
+	&:hover {
+		background-color: #cfd8dc;
+	}
+	&:disabled {
+		background-color: @color0;
+		color: #aaaaaa;
+		cursor: auto;
+	}
+}
+button.clear {
+	background-color: @color0;
+	border-radius: 4px;
+	border: none;
+	color: #333333;
+	cursor: hand;
+	cursor: pointer;
+	font-family: Arial;
+	margin-bottom: 12px;
+	padding: 5px 10px;
+}

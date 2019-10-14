@@ -1,0 +1,12 @@
+<div *ngIf="ride">
+	<h2>{{ride.date}} Ride</h2>
+	<div><span>id: </span>{{ride.id}}</div>
+	<div><span>date: </span>{{ride.date}}</div>
+	<div><label>total time: 
+		<input [(ngModel)]="ride.totalTime" placeholder="total time"/>
+	</label></div>
+	<div><span>distance(m): </span>{{ride.distanceMeters}}</div>
+	<div><span>max speed: </span>{{ride.maxSpeed}}</div>
+	<div><span>ave heart rate: </span>{{ride.averageHeartRate}}</div>
+	<button (click)="goBack()">go back</button>
+</div>

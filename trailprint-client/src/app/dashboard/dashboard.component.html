@@ -1,0 +1,9 @@
+<h3>Recent Rides</h3>
+<div class="grid grid-pad">
+	<a *ngFor="let ride of rides" class="col-1-4"
+	   routerLink='/detail/{{ride.id}}'>
+		<div class="module ride">
+			<h4>{{ride.date}}</h4>
+		</div>
+	</a>
+</div>
